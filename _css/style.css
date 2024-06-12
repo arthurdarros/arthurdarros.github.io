@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*Navegation Menu*/
+html{
+    overflow-x: hidden;
+}
+nav#menu{
+    display:block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -30px;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px#000000;
+    font-weight: 900;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 576px;
+    padding-left: 610px;
+    background: #0D0D0D;
+    border-bottom: 2px solid #000000;
+}
+nav#menu li{
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+}
+nav#menu li:hover{
+    background-color: #F2138E;
+}
+nav#menu a{
+    color: #ffffff;
+    text-shadow: #000000;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color:#2E27F2;
+}
+/*Section Main*/
+section#main{
+    display: block;
+    position: relative;
+    top:400px;
+    left:800px;
+    margin-right: 1300px;
+    margin-bottom: 800px;
+    padding: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 2px solid #000000;
+    background-color: #F2138E;
+    border-radius: 10px;
+
+}
+section#main h1{
+    color:#2E27F2;
+    font-size: 50pt;
+    font-weight: 800;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+section#main h2{
+    color: #FFFFFF;
+    text-shadow: 2px 1px 1px #000000;
+    font-size: 20pt;
+    font-family: "Bebas Neue" sans-serif;
+    margin-top: 0px;
+    text-align: center;
+    margin-right: 30px;
+}
+section#main h3{
+    color: #FFFFFF;
+    text-shadow: 2px 1px 1px #000000;
+    margin-bottom: 0px;
+    font-size: 20pt;
+    text-align: left;
+    margin-left: 20px;
+}
+section#main img{
+    position: absolute;
+    width: 223px;
+    right: 595px;
+    bottom: -2.5px;
+    border: 2px solid #000000;
+    border-right: none;
+}
+div#home{
+    background: linear-gradient(to right,#F2138E,#961BA6);
+    height: 1000px;
+    margin-top: -30px;
+    margin-left: -10px;
+    margin-right: -10px;
+    
+}
+section#about{
+    margin-bottom: 800px;
+}
+section#portfolio{
+    margin-bottom: 800px;
+}
+
