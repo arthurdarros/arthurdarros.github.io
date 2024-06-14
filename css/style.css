@@ -1,9 +1,15 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-/*Navegation Menu*/
-html{
-    overflow-x: hidden;
+/*Global*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+html, body{
+    width:100%;
+}  
+/*Navegation Menu*/ 
 nav#menu{
     display:block;
 }
@@ -11,15 +17,16 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: -30px;
+    top: 0;
+    left: 0;
     font-size: 20pt;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 2px#000000;
-    font-weight: 900;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 576px;
-    padding-left: 610px;
+    font-weight: bold;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 100%;
+    padding-left: 30%;
     background: #0D0D0D;
     border-bottom: 2px solid #000000;
 }
@@ -41,62 +48,80 @@ nav#menu a:hover{
 }
 /*Section Main*/
 section#main{
-    display: block;
-    position: relative;
-    top:400px;
-    left:800px;
-    margin-right: 1300px;
-    margin-bottom: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: auto;
     padding: 15px;
-    padding-top: 50px;
-    padding-bottom: 50px;
     border: 2px solid #000000;
     background-color: #F2138E;
-    border-radius: 10px;
-
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
 }
+.text{
+    padding: 20px;
+    text-align: left;
+}
+.photo img{
+    width: 300px;
+    height: auto;
+}
+
 section#main h1{
     color:#2E27F2;
     font-size: 50pt;
-    font-weight: 800;
+    font-weight: bold;
     font-family: "Bebas Neue", sans-serif;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-    text-align: center;
 }
 section#main h2{
     color: #FFFFFF;
     text-shadow: 2px 1px 1px #000000;
     font-size: 20pt;
     font-family: "Bebas Neue" sans-serif;
-    margin-top: 0px;
-    text-align: center;
-    margin-right: 30px;
+    margin: 0;
 }
 section#main h3{
     color: #FFFFFF;
     text-shadow: 2px 1px 1px #000000;
-    margin-bottom: 0px;
-    font-size: 20pt;
-    text-align: left;
-    margin-left: 20px;
-}
-section#main img{
-    position: absolute;
-    width: 223px;
-    right: 595px;
-    bottom: -2.5px;
-    border: 2px solid #000000;
-    border-right: none;
+    margin: 0;
+    font-size: 30pt;
 }
 div#home{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background: linear-gradient(to right,#F2138E,#961BA6);
-    height: 1000px;
-    margin-top: -30px;
-    margin-left: -10px;
-    margin-right: -10px;
-    
+}
+
+@media (min-width: 768px) {
+    main{
+        flex-direction: row;
+    }
+    .photo{
+        flex:1;
+    }
+    .text{
+        flex:2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
 }
 section#about{
     margin-bottom: 800px;
