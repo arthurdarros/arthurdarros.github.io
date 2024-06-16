@@ -33,6 +33,7 @@ nav#menu ul{
     border-bottom: 2px solid #000000;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 nav#menu li{
     display: inline-block;
