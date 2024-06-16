@@ -28,7 +28,7 @@ section#about h1{
     color: #FFFFFF;
     text-shadow: 1px 1px 1px #0D0D0D;   
 }
-.title{
+section#about .title{
     background-color: #6F23D9;
     margin-top: 5%;
     margin-left: 10%;
@@ -105,4 +105,44 @@ table#ss-table td{
     flex-direction: row;
     margin-top: 3%;
     margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 768px){
+    section .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+    section#about h2{
+        font-size: 24pt;
+    }
+    section#about h1{
+        font-size: 24pt;
+    }
+    section#about p{
+        margin: 0;
+        margin-top: 3%;
+        font-size: 10pt;
+    }
+    section#about img {
+        display: flex;
+        align-self: center;
+        max-width: 50%;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    .title{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    table#hs-table, table#ss-table {
+        margin-right: 0;
+    }
+    table#hs-table td, table#ss-table td{
+        font-size: 15pt;
+    }
+    .tables{
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
